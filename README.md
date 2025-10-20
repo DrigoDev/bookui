@@ -5,4 +5,4 @@ This is the User Interface for our Book Shop. Our development is based on React 
 ##Improvements
 - JWT authentication
 - E2E tests (BDD and Selenium)
-- Refactor the code (possiblity to create more components based on the pages)
+- Refactor the code (possibility to create more components based on the pages)
