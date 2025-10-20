@@ -1,5 +1,6 @@
 'use client'
 import Link from 'next/link'
+import styles from './BookList.module.css'
 
 export default function BookList({ books: initialBooks, onBooking }) {
     
@@ -10,11 +11,11 @@ export default function BookList({ books: initialBooks, onBooking }) {
             {initialBooks.map((b) => (
                 <li
                     key={b.id}
-                    className="border p-4 rounded-xl bg-white shadow-sm hover:shadow-md"
+                    className={styles.li}
                 >
                     <Link
                         href={`/books/${b.id}`}
-                        className="text-lg font-semibold text-blue-700 hover:underline"
+                        className={styles.item}
                     >
                         {b.name}
                     </Link>

@@ -34,7 +34,10 @@ export default function BookDetails({ params }) {
     return (
         <div className="p-10">
             <h1>Book Details</h1>
-            <p className="text-2xl font-bold mb-3">{book.name}</p>            
+            <br/>
+            <p className="text-2xl font-bold mb-3">Name: {book.name}</p>            
+            <p className="text-2xl font-bold mb-3">Author: Loren...</p>            
+            <p className="text-2xl font-bold mb-3">Description: Loren...</p>            
         </div>
     )
 }

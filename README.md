@@ -1,6 +1,8 @@
-# Book API
+# Book UI
 
-## Database migrations
-In order to configure the database with the migrations run those two commands bellow:
-- dotnet ef migrations add InitialCreate --project BookAPI.Data --startup-project BookAPI
-- dotnet ef database update --project BookAPI.Data --startup-project BookAPI
+This is the User Interface for our Book Shop. Our development is based on React and Next.js
+
+##Improvements
+- JWT authentication
+- E2E tests (BDD and Selenium)
+- Refactor the code (possiblity to create more components based on the pages)

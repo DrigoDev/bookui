@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation"
 import BookList from '@/components/BookList'
 import { fetchBooks } from '@/lib/booksApi'
 import { rentBook, returnBook, searchBooks } from '@/lib/booksApi'
+import styles from "./page.module.css";
 
 export default function Dashboard() {
     const router = useRouter()
@@ -62,11 +63,10 @@ export default function Dashboard() {
     return (
         <div className="p-10">
 
-            <div className="flex items-center gap-4 mb-6 w-full">
-                <h1 className="text-3xl font-bold">Book Shop</h1>
+            <div className={styles.header}>
+                <h1>Book Shop</h1>
                 <button
-                    onClick={handleLogout}
-                    className="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition"
+                    onClick={handleLogout}                    
                 >
                     Logout
                 </button>
